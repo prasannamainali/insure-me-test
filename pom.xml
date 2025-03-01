@@ -63,13 +63,11 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.10.1</version> <!-- Use the latest version of this plugin -->
+                    <version>3.13.0</version> 
                     <configuration>
                         <release>21</release>
                     </configuration>
                 </plugin>
-
-                <!-- Other plugins -->
                 <plugin>
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>3.4.2</version>
