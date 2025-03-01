@@ -78,7 +78,11 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
+<<<<<<< HEAD
           <version>3.13.0</version>  <!-- Set this to a compatible version -->
+=======
+          <version>3.10.1</version>  <!-- Updated to a newer version -->
+>>>>>>> ff4707d (modified pom for java 21)
           <configuration>
             <release>20</release>
           </configuration>
