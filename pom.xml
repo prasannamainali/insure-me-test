@@ -76,9 +76,21 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.0.0-M5</version>
                 </plugin>
-  
-            </plugins>
-        </pluginManagement>
+		<plugin>
+		<artifactId>maven-assembly-plugin</artifactId>
+		<configuration>
+            <archive>
+              <manifest>
+                <mainClass>com.selenium.test.insure_me_test.App</mainClass>
+              </manifest>
+            </archive>
+            <descriptorRefs>
+              <descriptor>jar-with-dependencies</descriptor>
+	    </descriptorRefs>
+          </configuration>
+	</plugin>	  
+       </plugins>
+      </pluginManagement>
     </build>
   
 </project>
