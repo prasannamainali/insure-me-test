@@ -14,7 +14,7 @@ public class App {
         options.addArguments("--headless");
         WebDriver driver = new ChromeDriver(options);
         
-        driver.get("http://44.201.154.175:8081/contact.html");
+        driver.get("http://54.89.80.249:8081/contact.html");
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
