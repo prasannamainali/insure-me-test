@@ -52,15 +52,17 @@
     <build>
         <pluginManagement>
             <plugins>
-                <!-- Maven Compiler Plugin -->
+                <!-- Maven Compiler Plugin (Updated for Java 21 support) -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.13.0</version> 
+                    <version>3.10.1</version> <!-- Updated version for Java 21 -->
                     <configuration>
-                        <release>20</release>
+                        <release>21</release> <!-- Updated to Java 21 -->
                     </configuration>
                 </plugin>
+
+                <!-- Maven JAR Plugin -->
                 <plugin>
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>3.4.2</version>
