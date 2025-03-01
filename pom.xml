@@ -1,12 +1,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
+  
     <modelVersion>4.0.0</modelVersion>
-
+  
     <groupId>com.selenium.test</groupId>
     <artifactId>insure-me-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-
+  
+    <properties>
+        <!-- Set Java version properties -->
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.release>17</maven.compiler.release>
+    </properties>
+  
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -18,7 +25,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
+  
     <dependencies>
         <!-- Selenium WebDriver -->
         <dependency>
@@ -26,14 +33,14 @@
             <artifactId>selenium-java</artifactId>
             <version>4.14.1</version>
         </dependency>
-
+  
         <!-- WebDriver Manager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>5.6.3</version>
         </dependency>
-
+  
         <!-- JUnit dependencies -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -48,34 +55,34 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+  
     <build>
         <pluginManagement>
             <plugins>
-                <!-- Maven Compiler Plugin (Updated for Java 21 support) -->
+                <!-- Maven Compiler Plugin -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.10.1</version> <!-- Updated version for Java 21 -->
+                    <version>3.10.1</version> <!-- Use the latest version supporting Java 21 -->
                     <configuration>
-                        <release>21</release> <!-- Updated to Java 21 -->
+                        <release>21</release>
                     </configuration>
                 </plugin>
-
-                <!-- Maven JAR Plugin -->
+  
+                <!-- Maven Jar Plugin -->
                 <plugin>
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>3.4.2</version>
                 </plugin>
-
+  
                 <!-- Maven Surefire Plugin for testing -->
                 <plugin>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.0.0-M5</version>
                 </plugin>
-
+  
             </plugins>
         </pluginManagement>
     </build>
-
+  
 </project>
